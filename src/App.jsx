@@ -6,7 +6,7 @@ function App() {
 
   return (
       <Container fluid id="App">
-        <h1>Meme Generator</h1> 
+        <h1>Meme Generator 1</h1> 
       </Container>
   )
 }
