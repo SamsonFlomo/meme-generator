@@ -1,11 +1,183 @@
+:root {
+    --primary-bg: #ffffff;
+    --standout-bg: #672280;
+    --txt-color: #000000;
+}
+
 #root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+    width: 100vw;
+    color: var(--txt-color);
+    min-height: 100vh;
 }
 
 #App {
-    min-height: 100vh;
     width: 100%;
+    padding: 0;
+    align-items: center;
+    height: 100%;
+}
+
+/* General */
+
+.flex-row {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.flex-col {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Header */
+
+.header {
+    width: 100vw;
+    background-color: var(--standout-bg);
+    justify-content: space-between;
+    padding: 1.3rem;
+    color: var(--primary-bg);
+    align-items: center;
+}
+
+.header-title {
+    font-size: 1.3rem;
+}
+
+.course-title {
+    font-size: .8rem;
+}
+
+.header-img {
+    height: 100%;
+    width: 3rem;
+    margin-right: .4rem;
+}
+
+/* Meme Session */
+
+.meme-container {
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 2rem;
+    gap: 2rem;
+}
+
+.meme-form {
+    gap: 1.5rem;
+}
+
+.input-wrapper {
+    justify-content: space-between;
+    gap: .5rem;
+}
+
+.txt-wrapper {
+    align-items: left;
+}
+
+.txt {
+    margin: .2rem 0;
+}
+
+.meme-btn {
+    background-color: var(--standout-bg);
+    color: var(--primary-bg);
+    padding: .3rem;
+    font-weight: 700;
+    height: 4rem;
+    font-size: 1.5rem;
+}
+
+.meme {
+    width: 100%;
+    position: relative;
+}
+
+.meme-text {
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    left: 50%;
+    transform: translateX(-50%);
+    margin: 1.5rem 0;
+    padding: 0 1.5rem;
+    font-family: impact, sans-serif;
+    text-transform: uppercase;
+    color: white;
+    letter-spacing: 1px;
+    text-shadow: 2px 2px 0 #000, -2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000, 0 2px 0 #000, 2px 0 0 #000, 0 -2px 0 #000, -2px 0 0 #000, 2px 2px 5px #000;
+}
+
+.top {
+    top: 0;
+}
+
+.bottom {
+    bottom: 0;
+}
+
+.meme-img {
+    width: 100%;
+    object-fit: cover;
+}
+
+input {
+    padding: .2rem;
+    width: 100%;
+}
+
+
+/* Quick CSS */
+
+
+.state-container {
+    min-height: 100vh;
+    width: 100vw;
+    background-color: #70B85D;
+    text-align: center;
+    padding: 3rem;
+    cursor: pointer;
+    align-items: center;
+    font-family: "Karla" sans-serif;
+}
+
+.add-item {
+    border-radius: 10px;
+    width: 100%;
+    max-width: 700px;
+    font-size: 2rem;
+    font-weight: 600;
+    background: transparent;
+    text-align: center;
+    border-color: var(--primary-bg);
+    color: var(--primary-bg);
+    margin-bottom: 1.5rem;
+    padding: 1rem;
+}
+
+.add-item:hover {
+    color: #2C5E2E;
+    background-color: #FFFEF1;
+}
+
+.add-item:focus {
+    outline: 0;
+}
+
+.items-wrapper {
+    width: 100%;
+    max-width: 700px;
+    text-align: left;
+    font-size: 1.5rem;
+    color: var(--primary-bg);
+}
+
+/* Form Practice */
+
+.form {
+    margin: 1rem auto;
+    color: red;
+    max-width: 500px;
 }

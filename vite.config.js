@@ -9,7 +9,7 @@ export default defineConfig(({ mode }) => {
   };
 
   if (mode === 'development' || mode === 'github') {
-    config.base = '/air-bnb-experience/';
+    config.base = '/meme-generator/';
   }
 
   return config;

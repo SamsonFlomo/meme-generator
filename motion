@@ -1,0 +1,16 @@
+ 1. [:!command](:!cmd) executes an external command.
+
+     Some useful examples are:
+     `:!{unix:(ls ),win:(dir)}`{vim}                   - shows a directory listing
+     `:!{unix:(rm ),win:(del)} FILENAME`{vim}          - removes file FILENAME
+
+ 2. [:w](:w) FILENAME              writes the current Neovim file to disk with
+                             name FILENAME.
+
+ 3. [v](v)  motion  :w FILENAME   saves the Visually selected lines in file
+                             FILENAME.
+
+ 4. [:r](:r) FILENAME              retrieves disk file FILENAME and puts it
+                             below the cursor position.
+
+ 5. {unix:([:r !ls](:r!) ),win:([:r !dir](:r!))}                  reads the output of the {unix:(ls),win:(dir)} command and

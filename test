@@ -1,0 +1,8 @@
+    before you press `<Enter>`{normal}.
+
+ 5. Neovim will write the selected lines to the file TEST. Use `:!{unix:(ls),win:(dir)}`{vim} to see it.
+    Do not remove it yet! We will use it in the next lesson.
+
+NOTE: Pressing [v](v) starts [Visual selection](visual-mode). You can move the cursor around to
+      make the selection bigger or smaller. Then you can use an operator to
+      do something with the text. For example, `d`{normal} deletes the text.
